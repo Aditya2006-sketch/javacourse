@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Java Arrays</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #23024d, #fa0066);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow-x: hidden;
+      color: white;
+      padding: 30px;
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.2);
+      color: #ffffff;
+      padding: 25px;
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+      text-shadow: 0 0 3px #fff;
+    }
+    main {
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+      background-color: rgba(0, 0, 0, 0.25);
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+    h1, h2 {
+      color: #ffffff;
+      font-family: 'Segoe UI', sans-serif;
+      text-shadow: 0 0 3px #ccc;
+    }
+    h1 {
+      font-size: 30px;
+    }
+    h2 {
+      font-size: 24px;
+      margin-top: 30px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #eeeeee;
+      text-shadow: 0 0 2px #aaa;
+    }
+    pre {
+      background-color: #1e1e1e;
+      color: #dcdcdc;
+      padding: 15px;
+      border-radius: 12px;
+      font-size: 16px;
+      overflow-x: auto;
+      margin-top: 15px;
+      border: 1px solid #333;
+      box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+    }
+    code {
+      font-family: Consolas, monospace;
+    }
+    .nav-buttons {
+      margin-top: 40px;
+      text-align: center;
+    }
+    .nav-buttons a {
+      margin: 0 10px;
+      padding: 12px 20px;
+      background-color: #f06292;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+      text-shadow: 0 0 3px #fff;
+    }
+    .nav-buttons a:hover {
+      background-color: #ec407a;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h2>Java Arrays</h2>
+    <p>
+      Arrays in Java are used to store multiple values in a single variable, instead of declaring separate variables for each value. They are fixed in size and hold elements of the same data type.
+    </p>
+
+    <h2>Declaring an Array</h2>
+    <p>
+      To declare an array in Java:
+    </p>
+    <pre><code>int[] myArray;  // Preferred
+// or
+int myArray[];</code></pre>
+
+    <h2>Creating an Array</h2>
+    <p>
+      Once declared, you can create an array using the <code>new</code> keyword:
+    </p>
+    <pre><code>myArray = new int[5];</code></pre>
+
+    <h2>Initializing an Array</h2>
+    <p>
+      You can initialize an array at the time of declaration:
+    </p>
+    <pre><code>int[] numbers = {10, 20, 30, 40, 50};</code></pre>
+
+    <h2>Accessing Array Elements</h2>
+    <p>
+      Array elements are accessed using index numbers starting from 0:
+    </p>
+    <pre><code>System.out.println(numbers[0]);  // Outputs 10</code></pre>
+
+    <h2>Example Program</h2>
+    <pre><code>public class ArrayExample {
+  public static void main(String[] args) {
+    int[] arr = {1, 2, 3, 4, 5};
+
+    for (int i = 0; i < arr.length; i++) {
+      System.out.println("Element at index " + i + ": " + arr[i]);
+    }
+  }
+}</code></pre>
+
+    <div class="nav-buttons">
+      <a href="java-break-continue.html">◀ Back</a>
+      <a href="congratulations.html">Next ▶</a>
+    </div>
+  </main>
+</body>
+</html>

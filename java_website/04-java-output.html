@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Java Output</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #23024d, #fa0066);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      padding: 30px;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 40px;
+      border-radius: 20px;
+      backdrop-filter: blur(25px);
+      width: 90%;
+      max-width: 900px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    h2, h3 {
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 1.7;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    }
+
+    .code-box {
+      background-color: rgba(30, 30, 30, 0.9);
+      color: #e6e6e6;
+      font-family: 'Courier New', monospace;
+      font-size: 15px;
+      padding: 20px;
+      margin-top: 15px;
+      margin-bottom: 30px;
+      border-radius: 15px;
+      box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.05), 0 0 15px rgba(0, 255, 255, 0.2);
+      overflow-x: auto;
+    }
+
+    .keyword {
+      color: #569cd6;
+    }
+
+    .string {
+      color: #d69d85;
+    }
+
+    .number {
+      color: #b5cea8;
+    }
+
+    .class-name {
+      color: #4ec9b0;
+    }
+
+    pre {
+      margin: 0;
+    }
+
+    strong {
+      color: #ffd5ec;
+    }
+    .nav-buttons {
+      margin-top: 40px;
+      text-align: center;
+    }
+    .nav-buttons a {
+      margin: 0 10px;
+      padding: 12px 20px;
+      background-color: #f06292;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+      text-shadow: 0 0 3px #fff;
+    }
+    .nav-buttons a:hover {
+      background-color: #ec407a;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Java Output</h2>
+
+    <p>In Java, we use <code>System.out.println()</code> to display output on the console. It helps us show messages, results, values of variables, and more while the program runs. Java also supports printing text, numbers, and special characters using escape sequences like <code>\n</code> (newline) or <code>\"</code> (double quotes).</p>
+
+    <h3>Printing Text</h3>
+    <p>To display text in Java, we use <code>System.out.println()</code>. It prints the given string and moves the cursor to the next line.</p>
+
+    <div class="code-box">
+      <pre>System.out.println(<span class="string">"Hello, world!"</span>);</pre>
+    </div>
+
+    <h3>Printing Numbers</h3>
+    <p>You can directly print numbers using <code>System.out.println()</code> without quotes.</p>
+
+    <div class="code-box">
+      <pre>System.out.println(<span class="number">123</span>);
+System.out.println(<span class="number">3.14</span>);</pre>
+    </div>
+
+    <h3>Printing Multiple Values</h3>
+    <p>You can also print text and numbers together using <code>+</code> to concatenate:</p>
+
+    <div class="code-box">
+      <pre>System.out.println(<span class="string">"Age: "</span> + <span class="number">20</span>);
+System.out.println(<span class="string">"Sum: "</span> + (<span class="number">5</span> + <span class="number">3</span>));</pre>
+    </div>
+
+    <h3>Printing Double Quotes</h3>
+    <p>To print double quotes inside a string, use the backslash (<code>\</code>) escape character before each quote.</p>
+
+    <div class="code-box">
+      <pre>System.out.println(<span class="string">"She said, \"Java is awesome!\""</span>);</pre>
+    </div>
+
+    <h3>Complete Example</h3>
+    <p>Here's a complete Java program demonstrating different output types:</p>
+
+    <div class="code-box">
+      <pre><span class="keyword">public class</span> <span class="class-name">OutputExample</span> {
+  <span class="keyword">public static void</span> main(String[] args) {
+    System.out.println(<span class="string">"Java Output Demo"</span>);
+    System.out.println(<span class="number">42</span>);
+    System.out.println(<span class="string">"Temperature: "</span> + <span class="number">36.6</span>);
+    System.out.println(<span class="string">"Total: "</span> + (<span class="number">10</span> + <span class="number">5</span>));
+    System.out.println(<span class="string">"She said, \"Java is awesome!\""</span>);
+  }
+}</pre>
+    </div>
+
+    <p><strong>Output:</strong></p>
+    <div class="code-box">
+      <pre>Java Output Demo
+42
+Temperature: 36.6
+Total: 15
+She said, "Java is awesome!"</pre>
+    </div>
+    <div class="nav-buttons">
+      <a href="java-syntax.html">◀ Back</a>
+      <a href="java-comments.html">Next ▶</a>
+  </div>
+</body>
+</html>

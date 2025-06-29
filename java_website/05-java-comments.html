@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Java Comments</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #23024d, #fa0066);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow-x: hidden;
+      color: white;
+      padding: 30px;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 40px;
+      border-radius: 20px;
+      backdrop-filter: blur(25px);
+      width: 90%;
+      max-width: 900px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    h2, h3 {
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 1.7;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    }
+
+    .code-box {
+      background-color: rgba(30, 30, 30, 0.9);
+      color: #e6e6e6;
+      font-family: 'Courier New', monospace;
+      font-size: 15px;
+      padding: 20px;
+      margin-top: 15px;
+      margin-bottom: 30px;
+      border-radius: 15px;
+      box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.05), 0 0 15px rgba(0, 255, 255, 0.2);
+      overflow-x: auto;
+    }
+
+    .keyword {
+      color: #569cd6;
+    }
+
+    .string {
+      color: #d69d85;
+    }
+
+    .number {
+      color: #b5cea8;
+    }
+
+    .class-name {
+      color: #4ec9b0;
+    }
+
+    .comment {
+      color: #6a9955;
+    }
+
+    pre {
+      margin: 0;
+    }
+
+    strong {
+      color: #ffd5ec;
+    }
+    .nav-buttons {
+      margin-top: 40px;
+      text-align: center;
+    }
+    .nav-buttons a {
+      margin: 0 10px;
+      padding: 12px 20px;
+      background-color: #f06292;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+      text-shadow: 0 0 3px #fff;
+    }
+    .nav-buttons a:hover {
+      background-color: #ec407a;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Java Comments</h2>
+
+    <p>Comments in Java are used to explain code, making it more readable and maintainable. They are ignored by the compiler during execution.</p>
+
+    <h3>Single-line Comments</h3>
+    <p>Single-line comments start with <code>//</code> and extend to the end of the line.</p>
+
+    <div class="code-box">
+      <pre><span class="comment">// This is a single-line comment</span>
+System.out.println(<span class="string">"Hello, World!"</span>); <span class="comment">// This is another single-line comment</span></pre>
+    </div>
+
+    <h3>Multi-line Comments</h3>
+    <p>Multi-line comments start with <code>/*</code> and end with <code>*/</code>. They can span multiple lines.</p>
+
+    <div class="code-box">
+      <pre><span class="comment">/*
+ This is a multi-line comment
+ It can span multiple lines
+*/</span>
+System.out.println(<span class="string">"Hello, World!"</span>);</pre>
+    </div>
+
+    <h3>Documentation Comments</h3>
+    <p>Documentation comments start with <code>/**</code> and end with <code>*/</code>. They are used to generate external documentation using the Javadoc tool.</p>
+
+    <div class="code-box">
+      <pre><span class="comment">/**
+ * This class demonstrates different types of comments in Java
+ * @author John Doe
+ * @version 1.0
+ */</span>
+<span class="keyword">public class</span> <span class="class-name">CommentExample</span> {
+  <span class="comment">/**
+   * This method prints a greeting message
+   * @param name The name to greet
+   * @return A greeting message
+   */</span>
+  <span class="keyword">public</span> <span class="class-name">String</span> greet(<span class="class-name">String</span> name) {
+    <span class="keyword">return</span> <span class="string">"Hello, "</span> + name + <span class="string">"!"</span>;
+  }
+}</pre>
+    </div>
+    
+    <div class="nav-buttons">
+      <a href="java-output.html">◀ Back</a>
+      <a href="java-variables.html">Next ▶</a>
+  </div>
+</body>
+</html>

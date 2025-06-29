@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Java Switch Statement</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #23024d, #fa0066);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow-x: hidden;
+      color: white;
+      padding: 30px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 25px;
+      padding: 30px 40px;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    }
+
+    h1, h2 {
+      color: #ffffff;
+      text-shadow: 0 0 3px #ffffff, 0 0 8px #ff00cc, 0 0 10px #ff00cc;
+    }
+
+    p, li {
+      color: #ffffff;
+    }
+
+    code {
+      color: #ffffff;
+      font-weight: bold;
+      text-shadow: 0 0 2px #ffffff, 0 0 6px #ff00cc;
+    }
+
+    pre {
+      background-color: #1e1e1e;
+      padding: 16px;
+      border-radius: 12px;
+      overflow-x: auto;
+      font-size: 15px;
+      margin: 15px 0;
+      color: #dcdcdc;
+    }
+
+    pre code {
+      color: #dcdcdc;
+      font-weight: normal;
+      text-shadow: none;
+    }
+    .nav-buttons {
+      margin-top: 40px;
+      text-align: center;
+    }
+    .nav-buttons a {
+      margin: 0 10px;
+      padding: 12px 20px;
+      background-color: #f06292;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+      text-shadow: 0 0 3px #fff;
+    }
+    .nav-buttons a:hover {
+      background-color: #ec407a;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Java Switch Statement</h1>
+    <p>The <code>switch</code> statement in Java allows you to execute different blocks of code based on the value of a variable.</p>
+
+    <h2>Syntax:</h2>
+    <pre><code>switch (expression) {
+  case value1:
+    // code block
+    break;
+  case value2:
+    // code block
+    break;
+  ...
+  default:
+    // default code block
+}</code></pre>
+
+    <h2>Example:</h2>
+    <pre><code>int day = 4;
+switch (day) {
+  case 1:
+    System.out.println("Monday");
+    break;
+  case 2:
+    System.out.println("Tuesday");
+    break;
+  case 3:
+    System.out.println("Wednesday");
+    break;
+  case 4:
+    System.out.println("Thursday");
+    break;
+  default:
+    System.out.println("Weekend");
+}</code></pre>
+
+    <h2>Key Points:</h2>
+    <ul>
+      <li><code>switch</code> evaluates the expression once and compares it to each <code>case</code>.</li>
+      <li>If a match is found, the corresponding block runs.</li>
+      <li><code>break</code> stops the switch block from falling through.</li>
+      <li><code>default</code> executes if no match is found.</li>
+    </ul>
+    <div class="nav-buttons">
+      <a href="java-if-else.html">◀ Back</a>
+      <a href="java-while-loop.html">Next ▶</a>
+  </div>
+</body>
+</html>

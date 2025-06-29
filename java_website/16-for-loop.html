@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Java For Loop</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #23024d, #fa0066);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow-x: hidden;
+      color: white;
+      padding: 30px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 25px;
+      padding: 30px 40px;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    }
+
+    h1, h2 {
+      color: #ffffff;
+      text-shadow: 0 0 3px #ffffff, 0 0 8px #ff00cc, 0 0 10px #ff00cc;
+    }
+
+    p, li {
+      color: #ffffff;
+    }
+
+    code {
+      color: #ffffff;
+      font-weight: bold;
+      text-shadow: 0 0 2px #ffffff, 0 0 6px #ff00cc;
+    }
+
+    pre {
+      background-color: #1e1e1e;
+      padding: 16px;
+      border-radius: 12px;
+      overflow-x: auto;
+      font-size: 15px;
+      margin: 15px 0;
+      color: #dcdcdc;
+    }
+
+    pre code {
+      color: #dcdcdc;
+      font-weight: normal;
+      text-shadow: none;
+    }
+    .nav-buttons {
+      margin-top: 40px;
+      text-align: center;
+    }
+    .nav-buttons a {
+      margin: 0 10px;
+      padding: 12px 20px;
+      background-color: #f06292;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+      text-shadow: 0 0 3px #fff;
+    }
+    .nav-buttons a:hover {
+      background-color: #ec407a;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Java For Loop</h1>
+    <p>The <code>for</code> loop in Java is used when you know how many times you want to execute a block of code.</p>
+
+    <h2>Syntax:</h2>
+    <pre><code>for (initialization; condition; update) {
+  // code block
+}</code></pre>
+
+    <h2>Example:</h2>
+    <pre><code>for (int i = 0; i &lt; 5; i++) {
+  System.out.println(i);
+}</code></pre>
+
+    <h2>Key Points:</h2>
+    <ul>
+      <li>Initialization is executed once at the beginning.</li>
+      <li>Condition is evaluated before each loop iteration.</li>
+      <li>Update is executed after each loop iteration.</li>
+    </ul>
+    <div class="nav-buttons">
+      <a href="java-while-loop.html">◀ Back</a>
+      <a href="java-break-continue.html">Next ▶</a>
+  </div>
+</body>
+</html>

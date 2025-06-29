@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Java Boolean</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #23024d, #fa0066);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow-x: hidden;
+      color: white;
+      padding: 30px;
+    }
+    .container {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 40px;
+      border-radius: 20px;
+      backdrop-filter: blur(25px);
+      width: 90%;
+      max-width: 900px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    h2, h3 {
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
+    }
+
+    p, ul {
+      font-size: 15px;
+      line-height: 1.7;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    }
+
+    .code-box {
+      background-color: rgba(30, 30, 30, 0.9);
+      color: #e6e6e6;
+      font-family: 'Courier New', monospace;
+      font-size: 15px;
+      padding: 20px;
+      margin-top: 15px;
+      margin-bottom: 30px;
+      border-radius: 15px;
+      box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.05), 0 0 15px rgba(0, 255, 255, 0.2);
+      overflow-x: auto;
+    }
+
+    pre {
+      margin: 0;
+    }
+
+    strong {
+      color: #ffd5ec;
+    }
+    .nav-buttons {
+      margin-top: 40px;
+      text-align: center;
+    }
+    .nav-buttons a {
+      margin: 0 10px;
+      padding: 12px 20px;
+      background-color: #f06292;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+      text-shadow: 0 0 3px #fff;
+    }
+    .nav-buttons a:hover {
+      background-color: #ec407a;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Java Boolean</h2>
+    <p>A <strong>boolean</strong> expression returns either <code>true</code> or <code>false</code>. It is commonly used in conditions and logic operations.</p>
+
+    <h3>Boolean Expression</h3>
+    <p>You can use comparison operators to check if a condition is <code>true</code> or <code>false</code>.</p>
+    <div class="code-box">
+      <pre>int x = 10;
+int y = 9;
+System.out.println(x &gt; y); // returns true</pre>
+    </div>
+
+    <h3>Boolean Values</h3>
+    <p>Java has a <code>boolean</code> data type that can store only two values: <code>true</code> or <code>false</code>.</p>
+    <div class="code-box">
+      <pre>boolean isJavaFun = true;
+boolean isTasty = false;
+
+System.out.println(isJavaFun);
+System.out.println(isTasty);</pre>
+    </div>
+
+    <h3>Boolean Expressions in Conditional Testing</h3>
+    <p>Boolean expressions are often used in conditional statements like <code>if</code> or <code>while</code> to make decisions.</p>
+    <div class="code-box">
+      <pre>int x = 10;
+
+System.out.println(x == 15); // false
+System.out.println(x == 10); // true</pre>
+    </div>
+
+    <p><strong>Note:</strong> Booleans are the basis of all Java comparisons and conditional logic.</p>
+
+    
+    <div class="nav-buttons">
+      <a href="java-math.html">◀ Back</a>
+      <a href="java-if-else.html">Next ▶</a>
+    </div>
+</body>
+</html>

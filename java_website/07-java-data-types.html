@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Java Data Types</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #3f0d64, #b91674);
+      color: #f1f1f1;
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.2);
+      color: #ffffff;
+      padding: 25px;
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+      text-shadow: 0 0 3px #fff;
+    }
+    main {
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+      background-color: rgba(0, 0, 0, 0.25);
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+    h1, h2, h3 {
+      color: #ffffff;
+      font-family: 'Segoe UI', sans-serif;
+      text-shadow: 0 0 3px #ccc;
+    }
+    h1 {
+      font-size: 30px;
+    }
+    h2 {
+      font-size: 24px;
+      margin-top: 30px;
+    }
+    h3 {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+    p, ul, table {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #eeeeee;
+      text-shadow: 0 0 2px #aaa;
+    }
+    pre {
+      background-color: #1e1e1e;
+      color: #dcdcdc;
+      padding: 15px;
+      border-radius: 12px;
+      font-size: 16px;
+      overflow-x: auto;
+      margin-top: 15px;
+      border: 1px solid #333;
+      box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #aaa;
+      padding: 10px;
+      text-align: left;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+    th {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+    .nav-buttons {
+      margin-top: 40px;
+      text-align: center;
+    }
+    .nav-buttons a {
+      margin: 0 10px;
+      padding: 12px 20px;
+      background-color: #f06292;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+      text-shadow: 0 0 3px #fff;
+    }
+    .nav-buttons a:hover {
+      background-color: #ec407a;
+    }
+  </style>
+</head>
+<body>
+  <header>Java Data Types</header>
+  <main>
+    <h2>What are Data Types?</h2>
+    <p>Data types in Java specify the different sizes and values that can be stored in a variable. Java is a statically-typed language, so every variable must be declared with a data type.</p>
+
+    <h2>Two Main Types</h2>
+    <ul>
+      <li><strong>Primitive Data Types</strong></li>
+      <li><strong>Non-Primitive Data Types</strong></li>
+    </ul>
+
+    <h2>Primitive Data Types</h2>
+    <p>These are predefined by the language and named by a keyword. There are 8 primitive data types in Java:</p>
+
+    <h3>Integer Types</h3>
+    <p>Used to store whole numbers:</p>
+    <table>
+      <tr><th>Type</th><th>Size</th><th>Description</th></tr>
+      <tr><td>byte</td><td>1 byte</td><td>-128 to 127</td></tr>
+      <tr><td>short</td><td>2 bytes</td><td>-32,768 to 32,767</td></tr>
+      <tr><td>int</td><td>4 bytes</td><td>-2,147,483,648 to 2,147,483,647</td></tr>
+      <tr><td>long</td><td>8 bytes</td><td>Huge range of integer values</td></tr>
+    </table>
+
+    <h3>Floating Point Types</h3>
+    <p>Used to store decimal numbers:</p>
+    <table>
+      <tr><th>Type</th><th>Size</th><th>Description</th></tr>
+      <tr><td>float</td><td>4 bytes</td><td>6 to 7 decimal digits</td></tr>
+      <tr><td>double</td><td>8 bytes</td><td>15 decimal digits</td></tr>
+    </table>
+
+    <h3>Character Type</h3>
+    <p>Used to store a single character or letter:</p>
+    <table>
+      <tr><th>Type</th><th>Size</th><th>Description</th></tr>
+      <tr><td>char</td><td>2 bytes</td><td>Single 16-bit Unicode character</td></tr>
+    </table>
+
+    <h3>Boolean Type</h3>
+    <p>Used to store true/false values:</p>
+    <table>
+      <tr><th>Type</th><th>Size</th><th>Description</th></tr>
+      <tr><td>boolean</td><td>1 bit</td><td>true or false</td></tr>
+    </table>
+
+    <h2>Non-Primitive Data Types</h2>
+    <p>These include classes, arrays, interfaces, and strings. They are created by the programmer and can store multiple values or more complex data.</p>
+    <pre><code>String name = "Java";
+int[] numbers = {1, 2, 3};</code></pre>
+
+    <div class="nav-buttons">
+      <a href="java-variables.html">◀ Back</a>
+      <a href="java-type-casting.html">Next ▶</a>
+    </div>
+  </main>
+</body>
+</html>

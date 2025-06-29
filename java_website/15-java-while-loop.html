@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Java While Loop</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #23024d, #fa0066);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow-x: hidden;
+      color: white;
+      padding: 30px;
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.2);
+      color: #ffffff;
+      padding: 25px;
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+      text-shadow: 0 0 3px #fff;
+    }
+    main {
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+      background-color: rgba(0, 0, 0, 0.25);
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+    h1, h2 {
+      color: #ffffff;
+      font-family: 'Segoe UI', sans-serif;
+      text-shadow: 0 0 3px #ccc;
+    }
+    h1 {
+      font-size: 30px;
+    }
+    h2 {
+      font-size: 24px;
+      margin-top: 30px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #eeeeee;
+      text-shadow: 0 0 2px #aaa;
+    }
+    pre {
+      background-color: #1e1e1e;
+      color: #dcdcdc;
+      padding: 15px;
+      border-radius: 12px;
+      font-size: 16px;
+      overflow-x: auto;
+      margin-top: 15px;
+      border: 1px solid #333;
+      box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+    }
+    code {
+      font-family: Consolas, monospace;
+    }
+    .nav-buttons {
+      margin-top: 40px;
+      text-align: center;
+    }
+    .nav-buttons a {
+      margin: 0 10px;
+      padding: 12px 20px;
+      background-color: #f06292;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+      text-shadow: 0 0 3px #fff;
+    }
+    .nav-buttons a:hover {
+      background-color: #ec407a;
+    }
+  </style>
+</head>
+<body>
+ 
+  <main>
+    <h2>Java While Loop</h2>
+    <p>
+      A while loop in Java is a control flow statement that allows code to be executed repeatedly based on a given Boolean condition. The loop continues to execute as long as the condition evaluates to true.
+    </p>
+
+    <h2>Syntax</h2>
+    <pre><code>while (condition) {
+    // Code to be executed
+}</code></pre>
+
+    <h2>Key Points</h2>
+    <ul>
+      <li><strong>Condition Check:</strong> The condition is evaluated before the loop body is executed.</li>
+      <li><strong>Infinite Loop:</strong> If the condition never becomes false, the loop will run indefinitely.</li>
+      <li><strong>Use Case:</strong> Ideal for scenarios where the number of iterations is not predetermined.</li>
+    </ul>
+
+    <h2>Example</h2>
+    <pre><code>public class WhileLoopExample {
+    public static void main(String[] args) {
+        int count = 1;
+
+        // While loop to print numbers from 1 to 5
+        while (count <= 5) {
+            System.out.println("Count is: " + count);
+            count++; // Increment the counter
+        }
+    }
+}</code></pre>
+
+    <h2>Output</h2>
+    <pre><code>Count is: 1
+Count is: 2
+Count is: 3
+Count is: 4
+Count is: 5</code></pre>
+
+    <div class="nav-buttons">
+      <a href="java-switch.html">◀ Back</a>
+      <a href="java-for-loop.html">Next ▶</a>
+    </div>
+  </main>
+</body>
+</html>

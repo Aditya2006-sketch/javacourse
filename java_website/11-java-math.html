@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Java Math Methods</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #23024d, #fa0066);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      padding: 30px;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 40px;
+      border-radius: 20px;
+      backdrop-filter: blur(25px);
+      width: 90%;
+      max-width: 900px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    h2, h3 {
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
+    }
+
+    p, ul {
+      font-size: 15px;
+      line-height: 1.7;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    }
+
+    .code-box {
+      background-color: rgba(30, 30, 30, 0.9);
+      color: #e6e6e6;
+      font-family: 'Courier New', monospace;
+      font-size: 15px;
+      padding: 20px;
+      margin-top: 15px;
+      margin-bottom: 30px;
+      border-radius: 15px;
+      box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.05), 0 0 15px rgba(0, 255, 255, 0.2);
+      overflow-x: auto;
+    }
+
+    pre {
+      margin: 0;
+    }
+
+    strong {
+      color: #ffd5ec;
+    }
+    .nav-buttons {
+      margin-top: 40px;
+      text-align: center;
+    }
+    .nav-buttons a {
+      margin: 0 10px;
+      padding: 12px 20px;
+      background-color: #f06292;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+      text-shadow: 0 0 3px #fff;
+    }
+    .nav-buttons a:hover {
+      background-color: #ec407a;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Java Math Methods</h2>
+
+    <p>Java provides many methods in the <code>Math</code> class to perform mathematical tasks on variables.</p>
+
+    <h3>Finding Maximum and Minimum</h3>
+    <p><code>Math.max(x, y)</code> returns the highest value of x and y:</p>
+    <div class="code-box">
+      <pre>Math.max(5, 10);</pre>
+    </div>
+
+    <p><code>Math.min(x, y)</code> returns the lowest value of x and y:</p>
+    <div class="code-box">
+      <pre>Math.min(5, 10);</pre>
+    </div>
+
+    <h3>Square Root</h3>
+    <p><code>Math.sqrt(x)</code> returns the square root of x:</p>
+    <div class="code-box">
+      <pre>Math.sqrt(64);</pre>
+    </div>
+
+    <h3>Absolute Value</h3>
+    <p><code>Math.abs(x)</code> returns the absolute (positive) value of x:</p>
+    <div class="code-box">
+      <pre>Math.abs(-6.7);</pre>
+    </div>
+
+    <h3>Random Numbers</h3>
+    <p><code>Math.random()</code> returns a random number between 0.0 (inclusive) and 1.0 (exclusive):</p>
+    <div class="code-box">
+      <pre>Math.random();</pre>
+    </div>
+
+    <p>To get more control over the random number, use this formula:</p>
+    <div class="code-box">
+      <pre>int randomNum = (int)(Math.random() * 101); // 0 to 100</pre>
+    </div>
+    <div class="nav-buttons">
+      <a href="java-strings.html">◀ Back</a>
+      <a href="java-booleans.html">Next ▶</a>
+  </div>
+</body>
+</html>

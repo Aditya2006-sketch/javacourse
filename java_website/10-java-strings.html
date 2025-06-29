@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Java Strings</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #23024d, #fa0066);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      padding: 30px;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 40px;
+      border-radius: 20px;
+      backdrop-filter: blur(25px);
+      width: 90%;
+      max-width: 900px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    h2, h3 {
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
+    }
+
+    p, ul {
+      font-size: 15px;
+      line-height: 1.7;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    }
+
+    .code-box {
+      background-color: rgba(30, 30, 30, 0.9);
+      color: #e6e6e6;
+      font-family: 'Courier New', monospace;
+      font-size: 15px;
+      padding: 20px;
+      margin-top: 15px;
+      margin-bottom: 30px;
+      border-radius: 15px;
+      box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.05), 0 0 15px rgba(0, 255, 255, 0.2);
+      overflow-x: auto;
+    }
+
+    .keyword {
+      color: #569cd6;
+    }
+
+    .string {
+      color: #d69d85;
+    }
+
+    .class-name {
+      color: #4ec9b0;
+    }
+
+    pre {
+      margin: 0;
+    }
+
+    strong {
+      color: #ffd5ec;
+    }
+    .nav-buttons {
+      margin-top: 40px;
+      text-align: center;
+    }
+    .nav-buttons a {
+      margin: 0 10px;
+      padding: 12px 20px;
+      background-color: #f06292;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+      text-shadow: 0 0 3px #fff;
+    }
+    .nav-buttons a:hover {
+      background-color: #ec407a;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Java Strings</h2>
+
+    <h3>Numbers and Strings</h3>
+    <p><strong>1. Adding Numbers</strong> — the result will be a number:</p>
+    <div class="code-box">
+      <pre>int x = 10;
+int y = 20;
+int z = x + y;</pre>
+    </div>
+
+    <p><strong>2. Adding Strings</strong> — the result will be a string (concatenation):</p>
+    <div class="code-box">
+      <pre>String x = "10";
+String y = "20";
+String z = x + y;</pre>
+    </div>
+
+    <p><strong>3. Adding a Number and a String</strong> — the result will be a string (concatenation):</p>
+    <div class="code-box">
+      <pre>String x = "10";
+int y = 20;
+String z = x + y;</pre>
+    </div>
+
+    <h3>Creating a String</h3>
+    <p>A string can be created using double quotes and assigned to a variable.</p>
+    <div class="code-box">
+      <pre>String name = "John";</pre>
+    </div>
+
+    <h3>String Length</h3>
+    <p>You can find the number of characters in a string using the <code>length()</code> method.</p>
+    <div class="code-box">
+      <pre>System.out.println(name.length());</pre>
+    </div>
+
+    <h3>Finding a Character in a String</h3>
+    <p>Use the <code>charAt(index)</code> method to find the character at a specific position (index starts at 0).</p>
+    <div class="code-box">
+      <pre>String name = "Blackboard";
+System.out.println(name.charAt(5));</pre>
+    </div>
+
+    <h3>Finding Index of a Character</h3>
+    <p>You can use the <code>indexOf(char)</code> method to find the position of a character.</p>
+    <div class="code-box">
+      <pre>System.out.println(name.indexOf('a'));</pre>
+    </div>
+
+    <h3>More String Methods</h3>
+    <ul>
+      <li><code>toUpperCase()</code> - Convert to uppercase</li>
+      <li><code>toLowerCase()</code> - Convert to lowercase</li>
+    </ul>
+    <div class="code-box">
+      <pre>String name = "Blackboard";
+System.out.println(name.toUpperCase());
+System.out.println(name.toLowerCase());</pre>
+    </div>
+
+    <h3>String Concatenation</h3>
+    <p>You can combine strings using <code>+</code> or the <code>concat()</code> method:</p>
+    <div class="code-box">
+      <pre>String firstName = "John";
+String lastName = "Doe";
+System.out.println(firstName + " " + lastName);
+System.out.println(firstName.concat(lastName));</pre>
+    </div>
+    <div class="nav-buttons">
+      <a href="java-operators.html">◀ Back</a>
+      <a href="java-math.html">Next ▶</a>
+  </div>
+</body>
+</html>

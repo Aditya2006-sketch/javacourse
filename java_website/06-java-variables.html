@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Java Variables</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #23024d, #fa0066);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow-x: hidden;
+      color: white;
+      padding: 30px;
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.2);
+      color: #ffffff;
+      padding: 25px;
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+      text-shadow: 0 0 3px #fff;
+    }
+    main {
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+      background-color: rgba(0, 0, 0, 0.25);
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+    h1, h2 {
+      color: #ffffff;
+      font-family: 'Segoe UI', sans-serif;
+      text-shadow: 0 0 3px #ccc;
+    }
+    h1 {
+      font-size: 30px;
+    }
+    h2 {
+      font-size: 24px;
+      margin-top: 30px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #eeeeee;
+      text-shadow: 0 0 2px #aaa;
+    }
+    ul {
+      font-size: 18px;
+      color: #eeeeee;
+      line-height: 1.6;
+    }
+    pre {
+      background-color: #1e1e1e;
+      color: #dcdcdc;
+      padding: 15px;
+      border-radius: 12px;
+      font-size: 16px;
+      overflow-x: auto;
+      margin-top: 15px;
+      border: 1px solid #333;
+      box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+    }
+    code {
+      font-family: Consolas, monospace;
+    }
+    .note, .output {
+      background-color: #333;
+      padding: 12px;
+      margin-top: 10px;
+      border-left: 5px solid #4caf50;
+      border-radius: 8px;
+      font-size: 16px;
+      box-shadow: inset 0 0 8px rgba(0,0,0,0.3);
+    }
+    .nav-buttons {
+      margin-top: 40px;
+      text-align: center;
+    }
+    .nav-buttons a {
+      margin: 0 10px;
+      padding: 12px 20px;
+      background-color: #f06292;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+      text-shadow: 0 0 3px #fff;
+    }
+    .nav-buttons a:hover {
+      background-color: #ec407a;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h2>What are Variables?</h2>
+    <p>In Java, variables are containers for storing data values. Java is a statically typed language, so you must declare a variable's type before using it.</p>
+
+    <h2>Declaring Variables</h2>
+    <pre><code>int number = 10;
+String name = "Alice";</code></pre>
+    <div class="output">Here, <code>number</code> is an integer, and <code>name</code> is a string.</div>
+
+    <h2>Identifiers</h2>
+    <p>An <strong>identifier</strong> is the name used for variables, methods, classes, etc. It must follow specific rules:</p>
+    <ul>
+      <li>Can contain letters, digits, underscore, and dollar sign</li>
+      <li>Must begin with a letter, underscore (_), or dollar sign ($)</li>
+      <li>Cannot begin with a digit</li>
+      <li>Cannot be a reserved keyword (like <code>class</code>, <code>int</code>)</li>
+    </ul>
+    <pre><code>int age = 25;      // valid
+String _name = "Bob"; // valid
+int 2ndNumber = 50; // invalid</code></pre>
+
+    <h2>Variable Types</h2>
+    <ul>
+      <li><code>int</code> - stores integers</li>
+      <li><code>double</code> - stores decimal numbers</li>
+      <li><code>char</code> - stores a single character</li>
+      <li><code>String</code> - stores text</li>
+      <li><code>boolean</code> - stores true or false</li>
+    </ul>
+
+    <h2>Types of Variables</h2>
+    <p>Java supports three types of variables based on their scope and declaration:</p>
+    <ul>
+      <li><strong>Local Variables</strong> - Declared inside a method or block and accessible only there</li>
+      <li><strong>Instance Variables</strong> - Declared in a class, but outside any method. They belong to objects.</li>
+      <li><strong>Static Variables</strong> - Declared using the <code>static</code> keyword and shared among all instances of a class</li>
+    </ul>
+    <pre><code>class Student {
+  int id; // instance variable
+  static String college = "ABC College"; // static variable
+
+  void display() {
+    String name = "John"; // local variable
+    System.out.println(name + " " + id + " " + college);
+  }
+}</code></pre>
+
+    <h2>Multiple Variables</h2>
+    <pre><code>int x = 5, y = 10, z = 15;</code></pre>
+    <div class="output">You can declare and assign multiple variables in a single line.</div>
+
+    <h2>Final Variables</h2>
+    <pre><code>final int SPEED = 90;</code></pre>
+    <div class="note">A variable declared with <code>final</code> is a constant and cannot be changed.</div>
+
+    <h2>Output Example</h2>
+    <pre><code>String language = "Java";
+System.out.println("I am learning " + language);</code></pre>
+    <div class="output">Output: <code>I am learning Java</code></div>
+
+    <div class="nav-buttons">
+      <a href="java-comments.html">◀ Back</a>
+      <a href="java-data-types.html">Next ▶</a>
+    </div>
+  </main>
+</body>
+</html>

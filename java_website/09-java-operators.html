@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Java Operators</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #23024d, #fa0066);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      padding: 30px;
+    }
+    .container {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 40px;
+      border-radius: 20px;
+      backdrop-filter: blur(25px);
+      width: 90%;
+      max-width: 900px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    h2, h3 {
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
+    }
+    p {
+      font-size: 15px;
+      line-height: 1.7;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    }
+    .code-box {
+      background-color: rgba(30, 30, 30, 0.9);
+      color: #e6e6e6;
+      font-family: 'Courier New', monospace;
+      font-size: 15px;
+      padding: 20px;
+      margin-top: 15px;
+      margin-bottom: 30px;
+      border-radius: 15px;
+      box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.05), 0 0 15px rgba(0, 255, 255, 0.2);
+      overflow-x: auto;
+    }
+    .keyword { color: #569cd6; }
+    .string { color: #d69d85; }
+    .number { color: #b5cea8; }
+    .class-name { color: #4ec9b0; }
+    .comment { color: #6a9955; }
+    pre { margin: 0; }
+    strong { color: #ffd5ec; }
+    .nav-buttons {
+      margin-top: 40px;
+      text-align: center;
+    }
+    .nav-buttons a {
+      margin: 0 10px;
+      padding: 12px 20px;
+      background-color: #f06292;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+      text-shadow: 0 0 3px #fff;
+    }
+    .nav-buttons a:hover {
+      background-color: #ec407a;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Java Operators</h2>
+
+    <p>Operators are used to perform operations on variables and values. In the example below, we use the <strong>+</strong> operator to add two values:</p>
+
+    <div class="code-box">
+      <pre><span class="keyword">int</span> x = <span class="number">100</span> + <span class="number">50</span>;</pre>
+    </div>
+
+    <p>The <strong>+</strong> operator can also be used to add variables and values together:</p>
+
+    <div class="code-box">
+      <pre><span class="keyword">int</span> sum1 = <span class="number">100</span> + <span class="number">50</span>;
+<span class="keyword">int</span> sum2 = sum1 + <span class="number">250</span>;
+<span class="keyword">int</span> sum3 = sum2 + sum2;</pre>
+    </div>
+
+    <h3>1. Arithmetic Operators</h3>
+    <p>Arithmetic operators are used to perform common mathematical operations:</p>
+    <div class="code-box">
+      <pre>+   Addition        Adds two values               x + y
+-   Subtraction     Subtracts one value from another         x - y
+*   Multiplication  Multiplies two values                    x * y
+/   Division        Divides one value by another             x / y
+%   Modulus         Returns the division remainder           x % y
+++  Increment       Increases the value by 1                 ++x
+--  Decrement       Decreases the value by 1                 --x</pre>
+    </div>
+
+    <h3>2. Assignment Operators</h3>
+    <p>Assignment operators are used to assign values to variables:</p>
+    <div class="code-box">
+      <pre>=   x = 5
++=  x += 3   <span class="comment">// x = x + 3</span>
+-=  x -= 3   <span class="comment">// x = x - 3</span>
+*=  x *= 3   <span class="comment">// x = x * 3</span>
+/=  x /= 3   <span class="comment">// x = x / 3</span>
+%=  x %= 3   <span class="comment">// x = x % 3</span></pre>
+    </div>
+
+    <h3>3. Comparison Operators</h3>
+    <p>Comparison operators are used to compare two values:</p>
+    <div class="code-box">
+      <pre>==  Equal to          x == y
+!=  Not equal to                 x != y
+>   Greater than                 x > y
+<   Less than                    x < y
+>=  Greater than or equal to     x >= y
+<=  Less than or equal to        x <= y</pre>
+    </div>
+
+    <h3>4. Logical Operators</h3>
+    <p>Logical operators are used to determine the logic between variables or values:</p>
+    <div class="code-box">
+      <pre>&&  Logical AND        x < 5 && x < 10
+||  Logical OR         x < 5 || x < 4
+!   Logical NOT        !(x < 5 && x < 10)</pre>
+    </div>
+    <div class="nav-buttons">
+      <a href="java-type-casting.html">◀ Back</a>
+      <a href="java-strings.html">Next ▶</a>
+  </div>
+</body>
+</html>

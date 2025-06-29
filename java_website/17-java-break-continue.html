@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Java break and continue</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #23024d, #fa0066);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow-x: hidden;
+      color: white;
+      padding: 30px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 50px auto;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 30px;
+      border-radius: 25px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+    }
+
+    h1, h2 {
+      color: white;
+      text-shadow: 0 0 4px #ffffff; /* soft white glow */
+    }
+
+    p, li {
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    code {
+      font-family: 'Courier New', monospace;
+      background-color: transparent;
+      color: white;
+      padding: 0;
+      border: none;
+      text-shadow: none;
+    }
+
+    pre {
+      background: #1e1e1e;
+      color: white;
+      padding: 15px;
+      border-radius: 15px;
+      margin-top: 15px;
+      margin-bottom: 30px;
+      overflow-x: auto;
+      box-shadow: 0 0 10px #000000, 0 0 20px #3f3f3f;
+    }
+
+    pre code {
+      color: white;
+    }
+
+    strong {
+      text-shadow: 0 0 5px #fff;
+    }
+    .nav-buttons {
+      margin-top: 40px;
+      text-align: center;
+    }
+    .nav-buttons a {
+      margin: 0 10px;
+      padding: 12px 20px;
+      background-color: #f06292;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+      text-shadow: 0 0 3px #fff;
+    }
+    .nav-buttons a:hover {
+      background-color: #ec407a;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Java break and continue Statements</h1>
+
+    <p>In Java, the break and continue statements are used to control the flow of loops. They allow you to either exit a loop early or skip certain iterations based on a condition.</p>
+
+    <h2>Break Statement</h2>
+    <ul>
+      <li><strong>Exits</strong> the loop completely when a certain condition is met.</li>
+      <li>Commonly used inside loops or switch statements.</li>
+      <li>Only exits the current loop, not nested ones (unless labeled).</li>
+    </ul>
+
+    <pre><code>// Example of break
+for (int i = 1; i <= 10; i++) {
+    if (i == 5) {
+        break;
+    }
+    System.out.println(i);
+}
+</code></pre>
+
+    <h2>Continue Statement</h2>
+    <ul>
+      <li><strong>Skips</strong> the current iteration and jumps to the next one.</li>
+      <li>Does not exit the loop.</li>
+      <li>Useful for skipping specific values or steps.</li>
+    </ul>
+
+    <pre><code>// Example of continue
+for (int i = 1; i <= 10; i++) {
+    if (i == 5) {
+        continue;
+    }
+    System.out.println(i);
+}
+</code></pre>
+      
+    <div class="nav-buttons">
+      <a href="java-for-loop.html">◀ Back</a>
+      <a href="java-arrays.html">Next ▶</a>
+  </div>
+</body>
+</html>

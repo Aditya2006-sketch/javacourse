@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Java Type Casting</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #23024d, #fa0066);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      padding: 30px;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 40px;
+      border-radius: 20px;
+      backdrop-filter: blur(25px);
+      width: 90%;
+      max-width: 900px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    h2, h3 {
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 1.7;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    }
+
+    .code-box {
+      background-color: rgba(30, 30, 30, 0.9);
+      color: #e6e6e6;
+      font-family: 'Courier New', monospace;
+      font-size: 15px;
+      padding: 20px;
+      margin-top: 15px;
+      margin-bottom: 30px;
+      border-radius: 15px;
+      box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.05), 0 0 15px rgba(0, 255, 255, 0.2);
+      overflow-x: auto;
+    }
+
+    .keyword {
+      color: #569cd6;
+    }
+
+    .string {
+      color: #d69d85;
+    }
+
+    .number {
+      color: #b5cea8;
+    }
+
+    .class-name {
+      color: #4ec9b0;
+    }
+
+    pre {
+      margin: 0;
+    }
+
+    strong {
+      color: #ffd5ec;
+    }
+    .nav-buttons {
+      margin-top: 40px;
+      text-align: center;
+    }
+    .nav-buttons a {
+      margin: 0 10px;
+      padding: 12px 20px;
+      background-color: #f06292;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+      text-shadow: 0 0 3px #fff;
+    }
+    .nav-buttons a:hover {
+      background-color: #ec407a;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Java Type Casting</h2>
+
+    <p>Type casting is when you assign a value of one primitive data type to another type.</p>
+    <p>In Java, there are two types of casting:</p>
+    <ul>
+      <li><strong>Widening Casting</strong> (automatically) - converting a smaller type to a larger type size: <code>byte → short → char → int → long → float → double</code></li>
+      <li><strong>Narrowing Casting</strong> (manually) - converting a larger type to a smaller size type: <code>double → float → long → int → char → short → byte</code></li>
+    </ul>
+
+    <h3>Widening Casting</h3>
+    <p>Widening casting is done automatically when passing a smaller size type to a larger size type.</p>
+
+    <div class="code-box">
+      <pre><span class="keyword">public class</span> <span class="class-name">Main</span> {
+  <span class="keyword">public static void</span> main(<span class="class-name">String</span>[] args) {
+    <span class="keyword">int</span> myInt = <span class="number">9</span>;
+    <span class="keyword">double</span> myDouble = myInt; <span class="comment">// Automatic casting: int to double</span>
+
+    System.out.println(myInt);
+    System.out.println(myDouble);
+  }
+}</pre>
+    </div>
+
+    <h3>Narrowing Casting</h3>
+    <p>Narrowing casting must be done manually by placing the type in parentheses in front of the value.</p>
+
+    <div class="code-box">
+      <pre><span class="keyword">public class</span> <span class="class-name">Main</span> {
+  <span class="keyword">public static void</span> main(<span class="class-name">String</span>[] args) {
+    <span class="keyword">double</span> myDouble = <span class="number">9.78</span>;
+    <span class="keyword">int</span> myInt = (<span class="keyword">int</span>) myDouble; <span class="comment">// Manual casting: double to int</span>
+
+    System.out.println(myDouble);
+    System.out.println(myInt);
+  }
+}</pre>
+    </div>
+    <div class="nav-buttons">
+      <a href="java-data-types.html">◀ Back</a>
+      <a href="java-operators.html">Next ▶</a>
+  </div>
+</body>
+</html>
